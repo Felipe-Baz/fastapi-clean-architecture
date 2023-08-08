@@ -11,6 +11,7 @@ sqlalchemy = "*"
 pydantic = "*"
 email-validator = "*"
 httpx = "*"
+pydantic-settings = "*"
 
 [dev-packages]
 pytest = "*"
