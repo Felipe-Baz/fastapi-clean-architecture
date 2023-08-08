@@ -5,6 +5,7 @@ from app.entity import BaseEntity
 
 from app.repository import BaseRepository
 
+
 class MemoryRepository(BaseRepository, ABC):
     def __init__(self) -> None:
         self.data: list[BaseEntity] = []

@@ -5,6 +5,7 @@ from typing import TypedDict
 
 from app.entity import BaseEntity
 
+
 class User(TypedDict):
     id: Optional[str]
     name: str

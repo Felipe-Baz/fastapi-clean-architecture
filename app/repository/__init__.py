@@ -5,6 +5,7 @@ from typing import Optional
 
 from app.entity import BaseEntity
 
+
 class ContextManagerRepository(ABC):
     @abstractmethod
     def commit(self):
