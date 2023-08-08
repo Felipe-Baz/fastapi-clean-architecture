@@ -5,6 +5,7 @@
 [![OpenAPI](https://img.shields.io/badge/openapi-6BA539?style=for-the-badge&logo=openapi-initiative&logoColor=fff)](https://www.openapis.org/)
 [![Swagger](https://img.shields.io/badge/-Swagger-%23Clojure?style=for-the-badge&logo=swagger&logoColor=white)](https://swagger.io/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg?style=for-the-badge)](https://black.readthedocs.io/en/stable/)
+[![Code test: pytest](https://img.shields.io/badge/code%20test-pytest-3670A0.svg?style=for-the-badge)](https://docs.pytest.org/en/7.4.x/)
 [![Open Issues](https://img.shields.io/github/issues-raw/Felipe-Baz/fastapi-clean-architecture?style=for-the-badge)](https://github.com/Felipe-Baz/fastapi-clean-architecture/issues)
 [![Closed Issues](https://img.shields.io/github/issues-closed-raw/Felipe-Baz/fastapi-clean-architecture?style=for-the-badge)](https://github.com/Felipe-Baz/fastapi-clean-architecture/issues?q=is%3Aissue+is%3Aclosed)
 [![Open Pulls](https://img.shields.io/github/issues-pr-raw/Felipe-Baz/fastapi-clean-architecture?style=for-the-badge)](https://github.com/Felipe-Baz/fastapi-clean-architecture/pulls)
