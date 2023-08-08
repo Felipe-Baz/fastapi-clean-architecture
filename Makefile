@@ -9,7 +9,7 @@ shell:
 	pipenv shell
 
 dev:
-	pipenv run uvicorn main:app --reload
+	pipenv run uvicorn app.main:app --reload
 
 check:
 	black --check .

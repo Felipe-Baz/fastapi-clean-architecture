@@ -8,6 +8,8 @@ fastapi = "*"
 uvicorn = {version = "*", extras = ["standard"]}
 python-dotenv = "*"
 sqlalchemy = "*"
+pydantic = "*"
+email-validator = "*"
 
 [dev-packages]
 pytest = "*"
