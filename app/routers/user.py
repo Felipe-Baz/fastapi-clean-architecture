@@ -2,12 +2,12 @@ from typing import List
 from fastapi import APIRouter
 
 from app.dto.user import UserRequest, UserResponse
-from app.repository.memory import MemoryRepository
+from app.repository.factory import Repositories, factory
 from app.use_case.user import UserAddUseCase, UserListUseCase
 
 router = APIRouter()
 
-repo = MemoryRepository()
+repo = factory(Repositories.MEMORY)
 
 
 @router.get("/users/")
