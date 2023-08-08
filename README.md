@@ -18,19 +18,19 @@
  - Install all the project dependency using Pipenv:
 
     ```sh
-    pipenv install --dev
+    make install
     ```
 
  - Run the application from command prompt:
 
     ```sh
-    pipenv run uvicorn main:app --reload
+    make dev
     ```
 
  - You can also open a shell inside virtual environment:
 
     ```sh
-    pipenv shell
+    make shell
     ```
 
  - Open `localhost:8000/docs` for API Documentation
@@ -45,13 +45,13 @@ For Testing, `unittest` module is used for Test Suite and Assertion, whereas `py
 
  - Run the following command to initiate test:
     ```sh
-    pipenv run pytest
+    make tests
     ```
 
  - To include Coverage Reporting as well:
 
     ```sh
-    pipenv run pytest --cov-report xml --cov .
+    make cov
     ```
 
 ## License

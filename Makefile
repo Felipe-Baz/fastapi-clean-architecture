@@ -17,4 +17,10 @@ check:
 format:
 	black .
 
+tests:
+	pipenv run pytest
+
+cov:
+	pipenv run pytest --cov-report=html --cov .
+
 .PHONY: install clean shell dev check format
