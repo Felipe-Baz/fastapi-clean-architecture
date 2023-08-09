@@ -23,10 +23,10 @@ app.add_middleware(
 )
 
 # Add Routers
-app.include_router(user.router, prefix="/v1", tags=["users"])
+app.include_router(user.router, prefix="/api/v1", tags=["users"])
 
 
 # Health
-@app.get("/v1/health")
+@app.get("/api/v1/health", tags=["health"])
 async def root():
     return {"version": env.API_VERSION}
