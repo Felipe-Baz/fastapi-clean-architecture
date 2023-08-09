@@ -24,12 +24,21 @@ cov:
 	pipenv run pytest --cov-report=html --cov .
 
 docker_image:
-	docker build -t fastapi_image .
+	docker build -t felipebaz/fastapi .
 
 docker_run:
-	docker run -d --name fastapi_container -p 5000:5000 fastapi_image
+	docker run -d --name fastapi -p 5000:5000 felipebaz/fastapi
 
-requirement:
-	pipenv requirement > requirement.txt
+requirements:
+	pipenv requirements > requirements.txt
+
+kube_deploy:
+	kubectl apply -f kubernetes.yaml
+
+kube_access:
+	minikube service fastapi-service
+
+kube_dash:
+	minikube dashboard
 
 .PHONY: install clean shell dev check format tests cov docker_image docker_run
