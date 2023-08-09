@@ -16,44 +16,110 @@
 
 ## Installation
 
+ - You can also open a shell inside virtual environment:
+
+   ```sh
+   make shell
+   ```
+
  - Install all the project dependency using Pipenv:
 
-    ```sh
-    make install
-    ```
+   ```sh
+   make install
+   ```
 
  - Run the application from command prompt:
 
-    ```sh
-    make dev
-    ```
+   ```sh
+   make dev
+   ```
 
- - You can also open a shell inside virtual environment:
+ - Clean
 
-    ```sh
-    make shell
-    ```
+   ```sh
+   make clean
+   ```
 
  - Open `localhost:8000/docs` for API Documentation
 
- - Open `localhost:8000/graphql` for GraphQL Documentation
+## Testing commands
 
-_*Note:* In case you are not able to access `pipenv` from you `PATH` locations, replace all instances of `pipenv` with `python3 -m pipenv`._
+ - Run tests:
+   ```sh
+   make tests
+   ```
 
-## Testing
+ - Run Coverage Report:
 
-For Testing, `unittest` module is used for Test Suite and Assertion, whereas `pytest` is being used for Test Runner and Coverage Reporter.
+   ```sh
+   make cov
+   ```
 
- - Run the following command to initiate test:
-    ```sh
-    make tests
-    ```
+## Format commands
 
- - To include Coverage Reporting as well:
+ - Check the code style:
 
-    ```sh
-    make cov
-    ```
+   ```sh
+   make check
+   ```
+
+ - Format the code:
+
+   ```sh
+   make format
+   ```
+
+## Docker commands
+
+ - Create `requirements.txt` with pipenv
+
+   ```sh
+   make requirements
+   ```
+
+ - Create a new docker image
+
+   ```sh
+   make docker_image
+   ```
+
+ - Run the API in a local container
+
+   ```sh
+   make docker_run
+   ```
+
+ - Deploy the docker image in docker hub
+
+   ```sh
+   make docker_push
+   ```
+
+## Kubernetes commands
+
+ - Start kubernetes 
+
+   ```sh
+   make kube_start
+   ```
+
+ - Deploy changes of `kubernetes.yaml`
+
+   ```sh
+   make kube_deploy
+   ```
+
+ - Access the api in kubernetes
+
+   ```sh
+   make kube_access
+   ```
+
+ - Access kubernetes dashboard
+
+   ```sh
+   make kube_dash
+   ```
 
 ## License
 

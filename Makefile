@@ -29,8 +29,14 @@ docker_image:
 docker_run:
 	docker run -d --name fastapi -p 5000:5000 felipebaz/fastapi
 
+docker_push:
+	docker push felipebaz/fastapi
+
 requirements:
 	pipenv requirements > requirements.txt
+
+kube_start:
+	minikube start
 
 kube_deploy:
 	kubectl apply -f kubernetes.yaml
@@ -41,4 +47,4 @@ kube_access:
 kube_dash:
 	minikube dashboard
 
-.PHONY: install clean shell dev check format tests cov docker_image docker_run
+.PHONY: install clean shell dev check format tests cov docker_image docker_run docker_push requirements kube_start kube_deploy kube_access kube_dash
