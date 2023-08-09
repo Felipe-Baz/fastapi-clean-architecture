@@ -18,5 +18,4 @@ async def get_users() -> List[UserResponse]:
 @router.post("/users/")
 async def create_user(user: UserRequest) -> UserResponse:
     entity = UserAddUseCase(repo).execute(user)
-
     return UserResponse.from_orm(entity)

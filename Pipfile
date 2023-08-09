@@ -12,6 +12,7 @@ pydantic = "*"
 email-validator = "*"
 httpx = "*"
 pydantic-settings = "*"
+google-cloud-firestore = "*"
 
 [dev-packages]
 pytest = "*"
